@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Referência Técnica de JavaScript',
+  tagline: 'Documentação profissional de JavaScript com exemplos práticos',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -20,15 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://hellosynkodev.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/dev-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'hellosynkodev', // Usually your GitHub org/user name.
+  projectName: 'dev-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -83,12 +83,18 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Referência JavaScript',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'JavaScript Docs',
           src: 'img/logo.svg',
         },
         items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'javascriptSidebar',
+            position: 'left',
+            label: 'JavaScript',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -97,7 +103,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/hellosynkodev/dev-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -107,8 +113,12 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentação',
             items: [
+              {
+                label: 'JavaScript',
+                to: '/docs/javascript',
+              },
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
@@ -116,24 +126,20 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Comunidade',
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/questions/tagged/javascript',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'MDN Web Docs',
+                href: 'https://developer.mozilla.org/pt-BR/',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Mais',
             items: [
               {
                 label: 'Blog',
@@ -141,12 +147,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/hellosynkodev/dev-docs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Referência Técnica JavaScript. Construído com Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
