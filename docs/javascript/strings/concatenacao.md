@@ -219,5 +219,4 @@ str1.concat(str2, str3)
 ## Relacionado
 
 - [console.log](../console/console-basico.md) - Exibir strings
-- [Template Strings Avançadas](./template-strings.md) - Tagged templates e casos avançados
 - [Spread Operator](../operadores/spread-rest.md) - Desempacotar arrays em argumentos
