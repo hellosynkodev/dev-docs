@@ -87,18 +87,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'javascriptSidebar',
             position: 'left',
-            label: 'JavaScript',
+            label: '📚 Documentação',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/hellosynkodev/dev-docs',
-            label: 'GitHub',
+            href: 'https://github.com/hellosynkodev',
+            label: '💻 GitHub',
             position: 'right',
           },
         ],
@@ -112,10 +105,6 @@ const config = {
               {
                 label: 'JavaScript',
                 to: '/docs/javascript',
-              },
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
               },
             ],
           },
